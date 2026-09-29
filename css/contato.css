@@ -1,0 +1,183 @@
+/* Estilo simples para a página de contato TECHNOS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #243047;
+  background: #f3f6fa;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.header {
+  background: #102a43;
+  color: #fff;
+  padding: 18px 24px;
+}
+
+.container {
+  width: min(1100px, 100% - 32px);
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #e5edf5;
+  text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #70e1d1;
+}
+
+form {
+  width: min(600px, calc(100% - 32px));
+  margin: 48px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(16 42 67 / 10%);
+}
+
+form label {
+  display: block;
+  margin: 16px 0 6px;
+  font-weight: 700;
+}
+
+form label:first-child {
+  margin-top: 0;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #2bb8a6;
+  outline-offset: 1px;
+  border-color: #168f84;
+}
+
+form button {
+  margin-top: 22px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 6px;
+  background: #087f73;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #06665d;
+}
+
+footer {
+  background: #102a43;
+  color: #e5edf5;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr;
+  gap: 28px;
+  padding: 36px 0;
+}
+
+.footer-logo,
+.footer-heading {
+  margin: 0 0 12px;
+  color: #fff;
+}
+
+.footer-text {
+  margin: 8px 0;
+  color: #c5d2df;
+}
+
+.footer-text a:hover {
+  color: #70e1d1;
+}
+
+.footer-bottom {
+  padding: 14px 0;
+  border-top: 1px solid rgb(255 255 255 / 15%);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-menu ul {
+    gap: 8px 14px;
+  }
+
+  form {
+    margin: 28px auto;
+    padding: 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 440px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
