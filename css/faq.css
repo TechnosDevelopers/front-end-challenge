@@ -1,0 +1,51 @@
+.faq-intro {
+    padding: 60px 5%;
+    text-align: center;
+    background: #f4f7f6;
+}
+
+.faq-intro h1 {
+    color: #10251f;
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.faq-label {
+    color: #087f5b;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.faq-subtitle {
+    color: #53645e;
+    font-size: 17px;
+}
+
+.faq-section {
+    padding: 40px 5%;
+}
+
+.faq-section h2 {
+    color: #10251f;
+    margin-bottom: 20px;
+}
+
+.faq-card {
+    background: #fff;
+    border: 1px solid #e1e9e5;
+    border-left: 4px solid #087f5b;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.faq-card h3 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    color: #53645e;
+    line-height: 1.6;
+}
