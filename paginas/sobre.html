@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre o Projeto - TdB Impact Engine</title>
+    <!-- Importação da tipografia padronizada -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Folha de estilos global do grupo -->
+    <link rel="stylesheet" href="/css/project.css" />
+    <style>
+      /* Estilos específicos validados para a página Sobre */
+      .sobre-hero {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .sobre-hero h1 {
+        font-size: 2.5rem;
+        color: var(--primary-dark);
+        margin-bottom: 1rem;
+      }
+
+      .sobre-hero p {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        max-width: 750px;
+        margin: 0 auto;
+      }
+
+      .bloco-conteudo {
+        background: var(--white);
+        padding: 2.5rem;
+        border-radius: var(--radius);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        margin-bottom: 2.5rem;
+      }
+
+      .bloco-conteudo h2 {
+        font-size: 1.75rem;
+        color: var(--primary-dark);
+        margin-bottom: 1.25rem;
+        border-left: 5px solid var(--primary);
+        padding-left: 0.75rem;
+      }
+
+      .grid-artigos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .card-artigo {
+        background: var(--bg-light);
+        padding: 1.5rem;
+        border-radius: 8px;
+        border-top: 3px solid var(--primary);
+      }
+
+      .card-artigo h3 {
+        font-size: 1.1rem;
+        color: var(--primary-dark);
+        margin-bottom: 0.5rem;
+      }
+
+      .card-artigo p {
+        font-size: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      .solucao-destaque {
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark),
+          var(--primary)
+        );
+        color: var(--white);
+        padding: 3rem;
+        border-radius: var(--radius);
+        margin-bottom: 2.5rem;
+        box-shadow: 0 10px 30px rgba(0, 119, 182, 0.15);
+      }
+
+      .solucao-destaque h2 {
+        color: var(--white);
+        border-left-color: var(--accent);
+        margin-bottom: 1rem;
+      }
+
+      .solucao-destaque p {
+        font-size: 1.05rem;
+        opacity: 0.95;
+        margin-bottom: 1.5rem;
+        line-height: 1.7;
+      }
+
+      .pilares-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+
+      .pilar-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1.25rem;
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+      }
+
+      .pilar-item h3 {
+        color: var(--accent);
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .pilar-item p {
+        font-size: 0.85rem;
+        margin: 0;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <a href="/index.html" class="logo">TdB <span>Impact Engine</span></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="/index.html">Início</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+            <li><a href="integrantes.html">Equipe</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="sobre-hero">
+        <h1>Sobre a TdB Impact Engine</h1>
+        <p>
+          Conheça a nossa proposta tecnológica desenhada para superar os
+          desafios operacionais e financeiros da Turma do Bem.
+        </p>
+      </section>
+
+      <section class="bloco-conteudo">
+        <h2>O Diagnóstico: Gargalos Enfrentados</h2>
+        <p>
+          A Turma do Bem realiza um trabalho essencial de saúde bucal, mas
+          enfrenta barreiras estruturais severas na captação de recursos:
+        </p>
+
+        <div class="grid-artigos">
+          <article class="card-artigo">
+            <h3>Dependência Corporativa (PJ)</h3>
+            <p>
+              80% do orçamento concentrado em poucas mantenedoras, gerando risco
+              alto de solvência, se uma das empresas responsáveis pela maior
+              parte das doações decide em um dia que centralizará sua
+              contribuição em outra causa, por exemplo, a Turma do bem irá
+              enfrentar problemas para dar continuidade aos tratamentos em
+              andamento e a inicialização de novos. A idea é distribuir esse
+              "peso" gerando um equilibrio entre as doações, assim caso aconteça
+              de alguma empresa se retirar esse impacto não será tão grande.
+            </p>
+          </article>
+
+          <article class="card-artigo">
+            <h3>O "Doador Fantasma" (PF)</h3>
+            <p>
+              Pessoas físicas fazem transferências rápidas, mas não deixam dados
+              os cadastrais certos e necessários. Isso impede o envio de recibos
+              e ações de retenção a longo prazo. No cenário atual, para realizar
+              uma doação pontual é necessário inserir o nome completo e
+              e-mail(onde as pessos não costumam olhar com frequência) na nossa
+              solução no momento da liquidação bancária, o backend receberá o
+              aviso do pagamento, validará o ID e cria a ficha do doador no
+              banco de dados, em total conformidade com a LGPD.
+            </p>
+          </article>
+
+          <article class="card-artigo">
+            <h3>Processos Manuais e dificuldade de captar informações</h3>
+            <p>
+              Dados importantes para a ong ainda são colocados manualmente em
+              planilhas de excel, o que acarreta em uma busca mais lenta na hora
+              de apresentar algum dado em uma reunião, ou fazer alguma
+              comparação para melhorar a performance de algo, a ideia é agrupar
+              esses dados no nosso sistema, onde facilitará o acesso a cada
+              informação específica, com um dashboard e indicadores para a
+              tomada de decisão.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="solucao-destaque">
+        <h2>Nossa Solução: TdB Impact Engine</h2>
+        <p>
+          Um ecossistema inteligente que une a responsabilidade ESG das empresas
+          com doações individuais fluidas e sem atrito.
+        </p>
+
+        <div class="pilares-grid">
+          <article class="pilar-item">
+            <h3>Motor Corporativo (B2B)</h3>
+            <p>
+              Focado em otimizar a captação de recursos com pessoas jurídicas.
+              Conta com um serviço de Inteligência Artificial para triagem
+              automática de editais (extraindo prazos, exigências e
+              compatibilidade) e uma calculadora algorítmica de dedução fiscal
+              para empresas enquadradas no regime de Lucro Real, gerando dossiês
+              focados em custo zero para a empresa.
+            </p>
+          </article>
+
+          <article class="pilar-item">
+            <h3>Corporate Match Funding</h3>
+            <p>
+              Mecanismo financeiro onde empresas parceiras alocam fundos de
+              contrapartida para duplicar ou multiplicar o valor das
+              micro-doações feitas pelos cidadãos (por exemplo, o cidadão doa
+              uma quantia e a empresa aporta o mesmo valor), aumentando
+              drasticamente a taxa de conversão pela percepção de impacto
+              ampliado.
+            </p>
+          </article>
+
+          <article class="pilar-item">
+            <h3>Fim do Doador Fantasma</h3>
+            <p>
+              Fluxo de doação sem fricção (UX otimizada) que solicita apenas
+              dois campos de cadastro (Nome e WhatsApp) atrelados a um Pix
+              dinâmico. Por meio de webhooks e conciliação instantânea, o
+              sistema cadastra o doador e dispara recibos automatizados em até 5
+              segundos, garantindo a retenção e conformidade com a LGPD..
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2026 Challenge FIAP - Turma do Bem & TdB Impact Engine. Todos os
+        direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
