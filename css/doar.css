@@ -1,0 +1,348 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #111827;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+main {
+    min-height: 700px;
+    padding: 50px 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form > label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+form > label:first-child {
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   ITENS DE DOAÇÃO
+========================= */
+
+.itens-doacao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.itens-doacao a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #222;
+    background-color: #fff;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.2s;
+}
+
+.itens-doacao a:hover {
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.itens-doacao p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.itens-doacao img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+
+/* =========================
+   PAGAMENTO
+========================= */
+
+h3 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+.formas-pagamento {
+    display: flex;
+    gap: 15px;
+}
+
+.formas-pagamento a {
+    text-decoration: none;
+}
+
+.formas-pagamento button {
+    width: 120px;
+    height: 65px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.formas-pagamento button:hover {
+    border-color: #2563eb;
+}
+
+.formas-pagamento img {
+    max-width: 80px;
+    max-height: 45px;
+}
+
+
+/* =========================
+   VALOR PERSONALIZADO
+========================= */
+
+form > p {
+    margin-top: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENSAGEM
+========================= */
+
+form h3:last-of-type {
+    text-align: center;
+    margin-top: 35px;
+    padding: 20px;
+    background-color: #eff6ff;
+    border-radius: 8px;
+    color: #1d4ed8;
+}
+
+
+/* =========================
+   BOTÃO DOAR
+========================= */
+
+form > button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form > button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111827;
+    color: #fff;
+    padding-top: 45px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer-heading {
+    margin: 0 0 15px;
+    color: #fff;
+}
+
+.footer-text {
+    color: #d1d5db;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.footer-text a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .itens-doacao {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .itens-doacao {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .formas-pagamento {
+        flex-direction: column;
+    }
+
+    .formas-pagamento button {
+        width: 100%;
+    }
+}
