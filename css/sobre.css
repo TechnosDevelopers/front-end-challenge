@@ -1,0 +1,297 @@
+
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #111827;
+    padding: 20px 5%;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #60a5fa;
+}
+
+/* Conteúdo principal */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 50px;
+}
+
+/* Introdução */
+
+.sobre-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sobre-hero h1 {
+    color: #111827;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.sobre-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/* Bloco do diagnóstico */
+
+.bloco-conteudo {
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.bloco-conteudo h2,
+.solucao-destaque h2 {
+    color: #111827;
+    font-size: 24px;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.bloco-conteudo > p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* Cartões do diagnóstico */
+
+.grid-artigos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card-artigo {
+    background-color: #f9fafb;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-top: 3px solid #2563eb;
+    border-radius: 8px;
+}
+
+.card-artigo h3 {
+    color: #111827;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.card-artigo p {
+    color: #6b7280;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Seção da solução */
+
+.solucao-destaque {
+    background-color: #111827;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.solucao-destaque h2 {
+    color: #fff;
+    border-left-color: #60a5fa;
+}
+
+.solucao-destaque > p {
+    color: #d1d5db;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Cartões dos pilares */
+
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.pilar-item {
+    background-color: #1f2937;
+    padding: 22px;
+    border: 1px solid #374151;
+    border-radius: 8px;
+}
+
+.pilar-item h3 {
+    color: #93c5fd;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.pilar-item p {
+    color: #e5e7eb;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #111827;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-logo,
+.footer-heading {
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    color: #d1d5db;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-col a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+/* Responsividade */
+
+@media (max-width: 950px) {
+    .grid-artigos,
+    .pilares-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding-top: 30px;
+    }
+
+    .sobre-hero h1 {
+        font-size: 26px;
+    }
+
+    .bloco-conteudo,
+    .solucao-destaque {
+        padding: 20px;
+    }
+
+    .bloco-conteudo h2,
+    .solucao-destaque h2 {
+        font-size: 21px;
+    }
+
+    .grid-artigos,
+    .pilares-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 12px 18px;
+    }
+}
