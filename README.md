@@ -40,23 +40,30 @@ Doneit/
 │   ├── doar.css
 │   ├── faq.css
 │   ├── contato.css
-│   └── integrantes.css
+│   ├── integrantes.css
+|   ├── doadores.css
+|   ├── edital.css
+|   └── empresas.css
 │    
 ├── imagens/
 │   └── logos e ícones
 │
 ├── images/
 │   ├── itensdoacao/
+|   ├── projeto/
 │   └── formas-pagamento/
 │
 ├── paginas/
 │   ├── sobre.html
 │   ├── faq.html
 │   ├── contato.html
-│   ├── integrantes.html
-│   │
+│   └── integrantes.html
+│
 │   └── solucao/
 │       └── doar.html
+|       ├── doadores.html
+|       ├── edital.html
+|       └── empresas.html
 │
 └── README.md
 ```
@@ -69,70 +76,67 @@ Equipe **Doneit — FIAP Challenge 2026**.
 
 ### Gustavo Souza Lopes
 
-- **RM:** [575057]
-- **Turma:** [1 TDSPT]
+- **RM:** 575057
+- **Turma:** 1 TDSPT
 - **LinkedIn:** [https://www.linkedin.com/in/gustavo-souza-lopes]
 - **GitHub:** [https://github.com/GustaLopess]
  <img src="images/integrantes/gustavo.png" width="120">
 
 ### Kaique Ferreira Castro
 
-- **RM:** [575222]
-- **Turma:** [1 TDSPT]
+- **RM:** 575222
+- **Turma:** 1 TDSPT
 - **LinkedIn:** [https://www.linkedin.com/in/kaiquefcastro]
 - **GitHub:** [https://github.com/kaiqueznx7]
  <img src="images/integrantes/kaique.jpg" width="120">
 
 ### Lucas Alves Pires
 
-- **RM:** [576621]
-- **Turma:** [1 TDSPT]
+- **RM:** 576621
+- **Turma:** 1 TDSPT
 - **LinkedIn:** [https://www.linkedin.com/in/lucaspires31]
 - **GitHub:** [https://github.com/lucaspires31]
  <img src="images/integrantes/lucas.jpg" width="120">
 
 ### Rafael Girardi Ramos
 
-- **RM:** [575391]
-- **Turma:** [1 TDSPT]
+- **RM:** 575391
+- **Turma:*1 TDSPT
 - **LinkedIn:** [https://www.linkedin.com/in/rafael-ramos-99a3b343b]
 - **GitHub:** [https://github.com/Rafaelreifsss]
  <img src="images/integrantes/rafael.jpg" width="120">
 
 ### Daniel Platero de Souza
 
-- **RM:** [575084]
-- **Turma:** [1 TDSPT]
+- **RM:** 575084
+- **Turma:** 1 TDSPT
 - **LinkedIn:** [https://www.linkedin.com/in/daniel-rodrigues-406927414]
 - **GitHub:** [https://github.com/Platero1310]
  <img src="images/integrantes/daniel.jpg" width="120">
 
 ## 5. Imagens e demonstração
 
-Adicione capturas de tela das principais páginas para demonstrar o funcionamento e a identidade visual do sistema.
+Capturas de tela das principais páginas para demonstrar o funcionamento e a identidade visual do sistema.
 
 ### Página inicial
 
-![Página inicial] <img src="/images/projeto/Sobre1.png">
-![Página inicial] <img src="/images/projeto/Sobre2.png">
+<img src="/images/projeto/Sobre1.png">
+<img src="/images/projeto/Sobre2.png">
 
 ### Página de doação
 
-![Página de doação] <img src="/images/projeto/Solucao.png">
+<img src="/images/projeto/Solucao.png">
 
 ### Página sobre o projeto
 
-![Página sobre o projeto] <img src="/images/projeto/Sobre1.png">
-![Página sobre o projeto] <img src="/images/projeto/Sobre2.png">
+<img src="/images/projeto/Sobre1.png">
+<img src="/images/projeto/Sobre2.png">
 
 ## 6. Repositório do GitHub
 
 O código-fonte do projeto está disponível no repositório:
 
 **GitHub:** [(https://github.com/TechnosDevelopers/front-end-challenge)]
-
-O repositório permite consultar os arquivos, acompanhar a evolução do desenvolvimento e conhecer a implementação da solução proposta pela equipe TECHNOS.
-
 ## 7. Contato
 
 Para dúvidas, sugestões ou informações sobre o projeto, entre em contato com os integrantes da equipe pelos respectivos perfis do LinkedIn ou GitHub.
