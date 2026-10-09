@@ -30,7 +30,7 @@ As tecnologias utilizadas no desenvolvimento do projeto incluem:
 ## 3. Estrutura de pastas
 
 ```text
-TdB-Impact-Engine/
+Doneit/
 │
 ├── index.html
 │
@@ -65,7 +65,7 @@ TdB-Impact-Engine/
 
 ## 4. Autores e integrantes
 
-Equipe **TECHNOS — FIAP Challenge 2026**.
+Equipe **Doneit — FIAP Challenge 2026**.
 
 ### Gustavo Souza Lopes
 
@@ -73,7 +73,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/gustavo-souza-lopes]
 - **GitHub:** [https://github.com/GustaLopess]
-- **Foto:** [https://github.com/TechnosDevelopers/front-end-challenge/images/integrantes/gustavo.png]
+ <img src="images/integrantes/gustavo.png" width="120">
 
 ### Kaique Ferreira Castro
 
@@ -81,7 +81,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/kaiquefcastro]
 - **GitHub:** [https://github.com/kaiqueznx7]
-- **Foto:** [Adicionar foto]
+ <img src="images/integrantes/kaique.jpg" width="120">
 
 ### Lucas Alves Pires
 
@@ -89,7 +89,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/lucaspires31]
 - **GitHub:** [https://github.com/lucaspires31]
-- **Foto:** [Adicionar foto]
+ <img src="images/integrantes/lucas.jpg" width="120">
 
 ### Rafael Girardi Ramos
 
@@ -97,7 +97,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/rafael-ramos-99a3b343b]
 - **GitHub:** [https://github.com/Rafaelreifsss]
-- **Foto:** [Adicionar foto]
+ <img src="images/integrantes/rafael.jpg" width="120">
 
 ### Daniel Platero de Souza
 
@@ -105,7 +105,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/daniel-rodrigues-406927414]
 - **GitHub:** [https://github.com/Platero1310]
-- **Foto:** []
+ <img src="images/integrantes/daniel.jpg" width="120">
 
 ## 5. Imagens e demonstração
 
@@ -113,15 +113,17 @@ Adicione capturas de tela das principais páginas para demonstrar o funcionament
 
 ### Página inicial
 
-![Página inicial](images/prints/home.png)
+![Página inicial] <img src="/images/projeto/Sobre1.png">
+![Página inicial] <img src="/images/projeto/Sobre2.png">
 
 ### Página de doação
 
-![Página de doação](images/prints/doar.png)
+![Página de doação] <img src="/images/projeto/Solucao.png">
 
 ### Página sobre o projeto
 
-![Página sobre o projeto](images/prints/sobre.png)
+![Página sobre o projeto] <img src="/images/projeto/Sobre1.png">
+![Página sobre o projeto] <img src="/images/projeto/Sobre2.png">
 
 ## 6. Repositório do GitHub
 
