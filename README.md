@@ -73,7 +73,7 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/gustavo-souza-lopes]
 - **GitHub:** [https://github.com/GustaLopess]
-- - **Foto:** [images/integrantes/gustavo.png]
+- **Foto:** [(https://github.com/TechnosDevelopers/front-end-challenge/images/integrantes/gustavo.png)]
 
 ### Kaique Ferreira Castro
 
