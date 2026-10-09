@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #111827;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #60a5fa;
+}
+
+/* Conteúdo */
+
+main {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.introducao {
+    margin-bottom: 30px;
+}
+
+.introducao h1 {
+    font-size: 30px;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.introducao p,
+.secao-budget > p,
+.secao-empresas > p {
+    color: #6b7280;
+}
+
+/* Indicadores */
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card-indicador {
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.card-indicador h2 {
+    font-size: 15px;
+    color: #6b7280;
+    font-weight: normal;
+}
+
+.numero {
+    font-size: 27px;
+    font-weight: bold;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.card-indicador span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Budget anual */
+
+.secao-budget,
+.secao-empresas {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.secao-budget h2,
+.secao-empresas h2 {
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.budget-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.budget-item span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.budget-item p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111827;
+}
+
+.budget-item .valor-arrecadado {
+    color: #15803d;
+}
+
+.progresso-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.progresso-cabecalho p {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.progresso-container {
+    width: 100%;
+    height: 14px;
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresso-barra {
+    width: 77%;
+    height: 100%;
+    background-color: #2563eb;
+}
+
+.observacao {
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 20px;
+}
+
+/* Tabela de empresas */
+
+.secao-empresas > p {
+    margin-bottom: 20px;
+}
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #f9fafb;
+}
+
+th,
+td {
+    padding: 16px 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    color: #6b7280;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 14px;
+    color: #374151;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Estágios */
+
+.estagio {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.captacao {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.triagem {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.negociacao {
+    background-color: #ede9fe;
+    color: #6d28d9;
+}
+
+.conclusao {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: #111827;
+    color: white;
+    padding-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    gap: 35px;
+    padding-bottom: 35px;
+}
+
+.footer-logo,
+.footer-heading {
+    margin-bottom: 12px;
+}
+
+.footer-text {
+    color: #d1d5db;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-col a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+/* Responsividade */
+
+@media (max-width: 850px) {
+    .indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .indicadores,
+    .budget-valores,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao h1 {
+        font-size: 25px;
+    }
+
+    .secao-budget,
+    .secao-empresas {
+        padding: 18px;
+    }
+
+    .numero {
+        font-size: 24px;
+    }
+}

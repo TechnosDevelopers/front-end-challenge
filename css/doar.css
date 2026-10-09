@@ -16,47 +16,47 @@ body {
    HEADER
 ========================= */
 
-.header {
+
+header {
     background-color: #111827;
-    padding: 20px 0;
+    padding: 20px 5%;
 }
 
-.container {
-    width: 90%;
+.nav-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-menu ul {
-    display: flex;
-    list-style: none;
+    align-items: center;
     gap: 25px;
 }
 
-.nav-menu a {
+.logo {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
-.nav-menu a:hover,
-.nav-menu .active {
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
     color: #60a5fa;
 }
-
 
 /* =========================
    ÁREA PRINCIPAL
@@ -252,6 +252,11 @@ footer {
     color: #fff;
     padding-top: 45px;
 }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .footer-grid {
     display: grid;
@@ -301,48 +306,26 @@ footer {
    RESPONSIVIDADE
 ========================= */
 
-@media (max-width: 768px) {
-
+@media (max-width: 950px) {
     .header-container {
         flex-direction: column;
-        gap: 20px;
     }
 
     .nav-menu ul {
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
-    }
-
-    .itens-doacao {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .footer-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-
-@media (max-width: 500px) {
-
-    .itens-doacao {
-        grid-template-columns: 1fr;
+@media (max-width: 600px) {
+    .nav-menu ul {
+        gap: 12px 18px;
     }
 
     .footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    form {
-        padding: 20px;
-    }
-
-    .formas-pagamento {
-        flex-direction: column;
-    }
-
-    .formas-pagamento button {
-        width: 100%;
     }
 }
