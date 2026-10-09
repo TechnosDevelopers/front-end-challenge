@@ -73,39 +73,39 @@ Equipe **TECHNOS — FIAP Challenge 2026**.
 - **Turma:** [1 TDSPT]
 - **LinkedIn:** [https://www.linkedin.com/in/gustavo-souza-lopes]
 - **GitHub:** [https://github.com/GustaLopess]
-- **Foto:** [(https://github.com/TechnosDevelopers/front-end-challenge/images/integrantes/gustavo.png)]
+- **Foto:** [https://github.com/TechnosDevelopers/front-end-challenge/images/integrantes/gustavo.png]
 
 ### Kaique Ferreira Castro
 
-- **RM:** [Preencher]
+- **RM:** [575222]
 - **Turma:** [1 TDSPT]
-- **LinkedIn:** []
-- **GitHub:** [Adicionar link]
+- **LinkedIn:** [https://www.linkedin.com/in/kaiquefcastro]
+- **GitHub:** [https://github.com/kaiqueznx7]
 - **Foto:** [Adicionar foto]
 
 ### Lucas Alves Pires
 
-- **RM:** [Preencher]
+- **RM:** [576621]
 - **Turma:** [1 TDSPT]
-- **LinkedIn:** [Adicionar link]
-- **GitHub:** [Adicionar link]
+- **LinkedIn:** [https://www.linkedin.com/in/lucaspires31]
+- **GitHub:** [https://github.com/lucaspires31]
 - **Foto:** [Adicionar foto]
 
 ### Rafael Girardi Ramos
 
-- **RM:** [Preencher]
+- **RM:** [575391]
 - **Turma:** [1 TDSPT]
-- **LinkedIn:** [Adicionar link]
-- **GitHub:** [Adicionar link]
+- **LinkedIn:** [https://www.linkedin.com/in/rafael-ramos-99a3b343b]
+- **GitHub:** [https://github.com/Rafaelreifsss]
 - **Foto:** [Adicionar foto]
 
 ### Daniel Platero de Souza
 
-- **RM:** [Preencher]
+- **RM:** [575084]
 - **Turma:** [1 TDSPT]
-- **LinkedIn:** [Adicionar link]
-- **GitHub:** [Adicionar link]
-- **Foto:** [Adicionar foto]
+- **LinkedIn:** [https://www.linkedin.com/in/daniel-rodrigues-406927414]
+- **GitHub:** [https://github.com/Platero1310]
+- **Foto:** []
 
 ## 5. Imagens e demonstração
 
