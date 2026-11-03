@@ -303,11 +303,12 @@ footer {
     font-size: 14px;
 }
 
-/* =========================
-   RESPONSIVIDADE
-========================= */
+/* RESPONSIVIDADE - DOAÇÕES */
 
 @media (max-width: 991px) {
+    .indicadores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     .footer-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -315,8 +316,36 @@ footer {
 }
 
 @media (max-width: 767px) {
+    main {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
 
+    .indicadores,
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .introducao h1 {
+        font-size: 25px;
+    }
+
+    .secao-grafico,
+    .informacoes {
+        padding: 18px;
+    }
+
+    .linha-grafico {
+        grid-template-columns: 55px minmax(0, 1fr) 40px;
+        gap: 8px;
+    }
+
+    .rotulo,
+    .valor {
+        font-size: 12px;
+    }
+
+    .barra-container {
+        height: 22px;
     }
 }
