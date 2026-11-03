@@ -7,81 +7,106 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>TECHNOS - TdB Impact Engine</title>
-    <link rel="stylesheet" href="/css/doar.css">
-
-    <link rel="icon" href="imagens/icon technos.jpeg" type="image/jpeg" />
+    <title>Doneit</title>
+    <link rel="icon" href="../../images/doneit_logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="../../css/doar.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+    <link rel="stylesheet" href="../../css/nav.css">
 </head>
 
 <body>
     <header>
-    <div class="nav-container">
-        <a href="../../index.html" class="logo">TECHNOS</a>
-
-        <nav>
-            <ul>
-                <li><a href="../../index.html" class="active">Home</a></li>
-                <li><a href="../sobre.html">Sobre</a></li>
-                <li><a href="../solucao/doar.html">Solução</a></li>
-                <li><a href="../faq.html">FAQ</a></li>
-                <li><a href="../contato.html">Contato</a></li>
-                <li><a href="../integrantes.html">Integrantes</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../../index.html"><img src="../../images/doneit_logo_nav.png"
+                        alt="Doneit - página inicial"></a>
+            </div>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal"><span></span><span></span><span></span></button>
+            <nav class="nav-menu" id="menu-principal">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../sobre.html">Sobre</a></li>
+                    <li><a href="../solucao/doar.html" class="active">Solução</a></li>
+                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li><a href="../integrantes.html">Integrantes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
         <section>
 
-            <form action="">
+            <h1 class="titulo-pagina">Faça sua doação</h1>
+
+            <form id="form-doar" action="" novalidate>
 
                 <label for="nome">Nome:</label>
-                <input type="text" placeholder="Ex: Leandro Cavallari" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome">
 
                 <label for="whatsapp">Número do WhatsApp:</label>
-                <input type="tel" placeholder="Ex: 97395-...." id="whatsapp" name="whatsapp">
+                <input type="tel" id="whatsapp" name="whatsapp">
 
                 <label for="email">Email:</label>
-                <input type="email" placeholder="email@exemplo.com" id="email" name="email" required>
+                <input type="email" id="email" name="email">
 
                 <div class="itens-doacao">
 
-                    <a href="">
+                    <label class="item-doacao">
+                        <input type="checkbox" name="itens" value="pasta-de-dente" data-valor="8">
                         <p>R$8,00</p>
                         <img src="../../images/itensdoacao/pastadente.jpg" alt="Pasta de dente">
-                    </a>
+                    </label>
 
-                    <a href="">
+                    <label class="item-doacao">
+                        <input type="checkbox" name="itens" value="escova-de-dente" data-valor="10">
                         <p>R$10,00</p>
                         <img src="../../images/itensdoacao/escovadedente.jpg" alt="Escova de dente">
-                    </a>
+                    </label>
 
-                    <a href="">
+                    <label class="item-doacao">
+                        <input type="checkbox" name="itens" value="fio-dental" data-valor="5">
                         <p>R$5,00</p>
                         <img src="../../images/itensdoacao/fiodental.jpg" alt="Fio dental">
-                    </a>
+                    </label>
 
-                    <a href="">
+                    <label class="item-doacao">
+                        <input type="checkbox" name="itens" value="kit-higiene-bucal" data-valor="20">
                         <p>R$20,00</p>
                         <img src="../../images/itensdoacao/kithigienebucal.jpg" alt="Kit de higiene bucal">
-                    </a>
+                    </label>
 
                 </div>
 
+                <h2>Método de Pagamento</h2>
+                <div class="formas-pagamento">
 
-                    <h3>Metodo de Pagamento</h3>
-                    <div class="formas-pagamento">
+                    <label class="metodo-pagamento">
+                        <input type="radio" name="pagamento" value="pix">
+                        <img src="../../images/formas-pagamento/pix.jpg" alt="Pix">
+                    </label>
 
-                        <a href=""><button><img src="../../images/formas-pagamento/pix.jpg" alt=""></button></a>
-                        <a href=""><button><img src="../../images/formas-pagamento/cartao.png" alt=""></button></a>
-                        <a href=""><button><img src="../../images/formas-pagamento/boleto.png" alt=""></button></a>
-                    </div>
-                    <p>Valor personalizado: </p>
-                    <input type="number"> 
+                    <label class="metodo-pagamento">
+                        <input type="radio" name="pagamento" value="cartao">
+                        <img src="../../images/formas-pagamento/cartao.png" alt="Cartão">
+                    </label>
 
-                    <h3>VOCÊ DOA UM VALOR, E ELE CHEGA EM DOBRO PARA NÓS!</h2>
-                    <button type="submit">Doar</button>
+                    <label class="metodo-pagamento">
+                        <input type="radio" name="pagamento" value="boleto">
+                        <img src="../../images/formas-pagamento/boleto.png" alt="Boleto">
+                    </label>
+
+                </div>
+                <p>Valor personalizado: </p>
+                <input type="number" id="valor-personalizado" min="1" step="0.01" placeholder="Ex: 15,00">
+
+                <p id="resumo-doacao" class="resumo-doacao" aria-live="polite">Escolha um item ou informe um valor para
+                    doar.</p>
+
+                <h2>VOCÊ DOA UM VALOR, E ELE CHEGA EM DOBRO PARA NÓS!</h2>
+                <button type="submit">Doar</button>
             </form>
         </section>
     </main>
@@ -126,4 +151,5 @@
         </div>
 
     </footer>
+    <script src="../../js/main.js"></script>
 </body>

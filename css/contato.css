@@ -170,28 +170,17 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 850px) {
-    .header-container {
-        flex-direction: column;
-    }
-
-    .nav-menu ul {
-        justify-content: center;
-    }
+@media (max-width: 991px) {
 
     .footer-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     form {
         padding: 20px;
         margin-top: 30px;
-    }
-
-    .nav-menu ul {
-        gap: 12px 18px;
     }
 
     .footer-grid {

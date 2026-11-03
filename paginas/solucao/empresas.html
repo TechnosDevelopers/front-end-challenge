@@ -1,12 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHNOS - Empresas</title>
+    <title>Doneit</title>
+    <link rel="icon" href="../../images/doneit_logo.png" type="image/jpeg">
     <link rel="stylesheet" href="../../css/empresas.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+    <link rel="stylesheet" href="../../css/nav.css">
 </head>
 
 <body>
@@ -14,10 +17,14 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                 <a href="../../index.html">TECHNOS</a>
+                <a href="../../index.html"><img src="../../images/doneit_logo_nav.png"
+                        alt="Doneit - página inicial"></a>
             </div>
 
-            <nav class="nav-menu">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal"><span></span><span></span><span></span></button>
+
+            <nav class="nav-menu" id="menu-principal">
                 <ul>
                     <li><a href="./doar.html">Doar</a></li>
                     <li><a href="./doadores.html">Doadores</a></li>
@@ -199,5 +206,7 @@
         </div>
     </footer>
 
+    <script src="../../js/main.js"></script>
 </body>
+
 </html>

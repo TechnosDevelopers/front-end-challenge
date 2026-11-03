@@ -1,12 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECHNOS - Doadores</title>
-    <link rel="stylesheet" href="/css/doadores.css">
+    <title>Doneit</title>
+    <link rel="icon" href="../../images/doneit_logo.png" type="image/jpeg">
+    <link rel="stylesheet" href="../../css/doadores.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+    <link rel="stylesheet" href="../../css/nav.css">
 </head>
 
 <body>
@@ -14,10 +16,14 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <a href="../../index.html">TECHNOS</a>
+                <a href="../../index.html"><img src="../../images/doneit_logo_nav.png"
+                        alt="Doneit - página inicial"></a>
             </div>
 
-            <nav class="nav-menu">
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal"><span></span><span></span><span></span></button>
+
+            <nav class="nav-menu" id="menu-principal">
                 <ul>
                     <li><a href="./doar.html">Doar</a></li>
                     <li><a href="./doadores.html" class="active">Doadores</a></li>
@@ -154,9 +160,7 @@
                 <p class="footer-text">Squad TECHNOS — São Paulo, SP</p>
 
                 <p class="footer-text">
-                    <a href="https://turmadobem.org.br/"
-                       target="_blank"
-                       rel="">
+                    <a href="https://turmadobem.org.br/" target="_blank" rel="">
                         Site Oficial Turma do Bem
                     </a>
                 </p>
@@ -189,5 +193,7 @@
 
     </footer>
 
+    <script src="../../js/main.js"></script>
 </body>
+
 </html>

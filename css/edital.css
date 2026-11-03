@@ -263,7 +263,7 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 850px) {
+@media (max-width: 991px) {
     .resumo {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -271,20 +271,9 @@ footer {
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .header-container {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    .nav-menu ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
     .resumo,
     .detalhes,
     .footer-grid {
