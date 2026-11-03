@@ -261,19 +261,28 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - EDITAL */
 
 @media (max-width: 991px) {
     .resumo {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .detalhes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 767px) {
+    main {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
     .resumo,
     .detalhes,
     .footer-grid {
@@ -290,5 +299,9 @@ footer {
 
     .edital-card {
         padding: 16px;
+    }
+
+    .edital-cabecalho {
+        align-items: flex-start;
     }
 }
