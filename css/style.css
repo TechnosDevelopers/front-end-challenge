@@ -269,10 +269,9 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - HOME */
 
 @media (max-width: 991px) {
-
     .grid-3 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -297,13 +296,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .section {
-        padding: 40px 0;
-    }
-
-    .section-title,
-    .destaque-container h2 {
-        font-size: 25px;
+    .hero {
+        padding: 45px 15px;
     }
 
     .hero-title {
@@ -312,6 +306,15 @@ footer {
 
     .hero-description {
         font-size: 14px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section-title,
+    .destaque-container h2 {
+        font-size: 25px;
     }
 
     .card {

@@ -240,7 +240,7 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - SOBRE */
 
 @media (max-width: 991px) {
     .grid-artigos,
@@ -256,10 +256,19 @@ footer {
 @media (max-width: 767px) {
     main {
         padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
+    .sobre-hero {
+        margin-bottom: 25px;
     }
 
     .sobre-hero h1 {
         font-size: 26px;
+    }
+
+    .sobre-hero p {
+        font-size: 14px;
     }
 
     .bloco-conteudo,
@@ -276,9 +285,5 @@ footer {
     .pilares-grid,
     .footer-grid {
         grid-template-columns: 1fr;
-    }
-
-    .logo {
-        font-size: 22px;
     }
 }

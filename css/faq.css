@@ -164,29 +164,55 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - HOME */
 
 @media (max-width: 991px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     .footer-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 34px;
+    }
 }
 
 @media (max-width: 767px) {
-    .faq-intro h1 {
-        font-size: 26px;
-    }
-
-    .faq-section h2 {
-        font-size: 21px;
-    }
-
-    .faq-card {
-        padding: 18px;
-    }
-
+    .grid-2,
+    .grid-3,
     .footer-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero-title {
+        font-size: 29px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 40px 15px;
+    }
+
+    .section-title,
+    .destaque-container h2 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 20px;
     }
 }
