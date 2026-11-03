@@ -303,27 +303,36 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - DASHBOARD EMPRESAS */
 
 @media (max-width: 991px) {
     .indicadores {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .budget-valores {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 767px) {
-    .indicadores,
-    .budget-valores,
-    .footer-grid {
-        grid-template-columns: 1fr;
+    main {
+        padding-top: 30px;
+        padding-bottom: 35px;
     }
 
     .introducao h1 {
         font-size: 25px;
+    }
+
+    .indicadores,
+    .budget-valores,
+    .footer-grid {
+        grid-template-columns: 1fr;
     }
 
     .secao-budget,
@@ -333,5 +342,18 @@ footer {
 
     .numero {
         font-size: 24px;
+    }
+
+    .progresso-cabecalho {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tabela-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
     }
 }

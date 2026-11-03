@@ -251,14 +251,14 @@ footer {
     font-size: 13px;
 }
 
-/* RESPONSIVIDADE - EDITAIS */
+/* RESPONSIVIDADE - ESTATISTICAS DOADORES */
 
 @media (max-width: 991px) {
-    .resumo {
+    .indicadores {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .detalhes {
+    .budget-valores {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -273,25 +273,35 @@ footer {
         padding-bottom: 35px;
     }
 
-    .resumo,
-    .detalhes,
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
     .introducao h1 {
         font-size: 25px;
     }
 
-    .secao-editais {
+    .indicadores,
+    .budget-valores,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-budget,
+    .secao-empresas {
         padding: 18px;
     }
 
-    .edital-card {
-        padding: 16px;
+    .numero {
+        font-size: 24px;
     }
 
-    .edital-cabecalho {
-        align-items: flex-start;
+    .progresso-cabecalho {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tabela-container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
     }
 }
