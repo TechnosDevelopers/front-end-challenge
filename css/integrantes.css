@@ -184,10 +184,9 @@ footer {
     font-size: 13px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE - INTEGRANTES */
 
 @media (max-width: 991px) {
-
     .integrantes {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -198,6 +197,11 @@ footer {
 }
 
 @media (max-width: 767px) {
+    main {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
+
     .integrantes,
     .footer-grid {
         grid-template-columns: 1fr;
