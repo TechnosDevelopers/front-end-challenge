@@ -93,13 +93,13 @@ main {
     margin-bottom: 15px;
 }
 
-.card-integrante h3 {
+.card-integrante h2 {
     color: #111827;
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.card-integrante h4 {
+.card-integrante h3 {
     color: #2563eb;
     font-size: 14px;
     font-weight: 600;
@@ -186,14 +186,7 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 850px) {
-    .header-container {
-        flex-direction: column;
-    }
-
-    .header-container ul {
-        justify-content: center;
-    }
+@media (max-width: 991px) {
 
     .integrantes {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -204,7 +197,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .integrantes,
     .footer-grid {
         grid-template-columns: 1fr;
@@ -217,9 +210,5 @@ footer {
     .card-integrante > img {
         width: 130px;
         height: 130px;
-    }
-
-    .header-container ul {
-        gap: 12px 18px;
     }
 }

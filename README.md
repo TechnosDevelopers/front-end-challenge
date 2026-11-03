@@ -23,6 +23,7 @@ Por meio de uma interface intuitiva, o projeto apresenta recursos voltados à di
 As tecnologias utilizadas no desenvolvimento do projeto incluem:
 
 - **HTML5:** estruturação das páginas.
+- **JavaScript:** manipulação de elementos.
 - **CSS3:** estilização, layout e responsividade.
 - **Git:** controle de versão do código.
 - **GitHub:** armazenamento e compartilhamento do repositório.
@@ -52,7 +53,10 @@ Doneit/
 │   ├── itensdoacao/
 |   ├── projeto/
 │   └── formas-pagamento/
-│
+|
+│──js/
+|   ├──main.js
+|
 ├── paginas/
 │   ├── sobre.html
 │   ├── faq.html

@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - TECHNOS</title>
+    <title>Doneit</title>
+    <link rel="icon" href="../images/doneit_logo_nav.png" type="image/jpeg">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/integrantes.css">
     <link rel="stylesheet" href="../css/faq.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 
 <body>
@@ -16,16 +18,22 @@
     <header class="header">
         <div class="container header-container">
             <div class="logo">
-                <a href="../index.html">TECHNOS</a>
+                <a href="../index.html"><img src="../images/doneit_logo_nav.png" alt="Doneit - página inicial"></a>
             </div>
 
-              <ul>
-                    <li><a href="../../index.html" class="active">Home</a></li>
-                    <li><a href="/paginas/sobre.html">Sobre</a></li>
-                    <li><a href="/paginas/solucao/doar.html">Solução</a></li>
-                    <li><a href="/paginas/faq.html">FAQ</a></li>
-                    <li><a href="/paginas/contato.html">Contato</a></li>
-                    <li><a href="/paginas/integrantes.html">Integrantes</a></li>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-menu" id="menu-principal">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../paginas/sobre.html">Sobre</a></li>
+                    <li><a href="../paginas/solucao/doar.html">Solução</a></li>
+                    <li><a href="../paginas/faq.html" class="active">FAQ</a></li>
+                    <li><a href="../paginas/contato.html">Contato</a></li>
+                    <li><a href="../paginas/integrantes.html">Integrantes</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,7 +55,7 @@
                 <h2>Sobre o projeto</h2>
 
                 <div class="faq-card">
-                    <h3>O que é o TdB Impact Engine?</h3>
+                    <h3>O que é a Doneit?</h3>
                     <p>
                         É uma proposta de plataforma para organizar informações
                         sobre doadores, empresas e parceiros da Turma do Bem.
@@ -117,5 +125,7 @@
         </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
+
 </html>

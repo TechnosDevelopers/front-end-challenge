@@ -271,14 +271,7 @@ footer {
 
 /* Responsividade */
 
-@media (max-width: 850px) {
-    .header-container {
-        flex-direction: column;
-    }
-
-    .nav-menu ul {
-        justify-content: center;
-    }
+@media (max-width: 991px) {
 
     .grid-3 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -297,7 +290,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .grid-2,
     .grid-3,
     .footer-grid {
@@ -319,10 +312,6 @@ footer {
 
     .hero-description {
         font-size: 14px;
-    }
-
-    .nav-menu ul {
-        gap: 12px 18px;
     }
 
     .card {

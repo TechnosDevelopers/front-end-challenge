@@ -1,0 +1,241 @@
+/* ==========================================================
+   TECHNOS - SPRINT 02 | Responsividade e componentes interativos
+   Breakpoints: mobile até 480px | tablet 768px | desktop 992px | telas grandes 1300px
+   Carregado por TODAS as páginas, depois do CSS específico de cada uma.
+   ========================================================== */
+
+/* ---------- 1. Segurança contra vazamento lateral ---------- */
+img,
+video {
+    max-width: 100%;
+}
+
+/* ---------- 2. Logo da navbar ---------- */
+.logo img {
+    display: block;
+    height: 56px;
+    width: auto;
+}
+
+/* ---------- 3. Menu hambúrguer (escondido no desktop) ---------- */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ---------- 4. Validação de formulários ---------- */
+.erro-msg {
+    display: block;
+    margin: 4px 0 10px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+form input.campo-invalido,
+form textarea.campo-invalido {
+    border: 2px solid #dc2626;
+}
+
+form input.campo-valido,
+form textarea.campo-valido {
+    border: 2px solid #16a34a;
+}
+
+.form-sucesso {
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #dcfce7;
+    color: #166534;
+    font-weight: bold;
+}
+
+/* ---------- 5. Acordeão do FAQ ---------- */
+.js-ativo .faq-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.js-ativo .faq-card h3::after {
+    content: "+";
+    font-size: 22px;
+    color: #2563eb;
+}
+
+.js-ativo .faq-card.aberto h3::after {
+    content: "−";
+}
+
+.js-ativo .faq-card h3:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 4px;
+}
+
+.js-ativo .faq-card p {
+    display: none;
+    margin-top: 10px;
+}
+
+.js-ativo .faq-card.aberto p {
+    display: block;
+}
+
+/* ---------- 6. Página de doação (interações da solução) ---------- */
+.itens-doacao a {
+    cursor: pointer;
+}
+
+.itens-doacao a.selecionado {
+    outline: 3px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+.formas-pagamento button {
+    cursor: pointer;
+}
+
+.formas-pagamento button.selecionado {
+    outline: 3px solid #2563eb;
+}
+
+.resumo-doacao {
+    margin: 14px 0;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #eff6ff;
+    color: #1e3a8a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulo-pagina {
+    text-align: center;
+    margin: 30px auto 0;
+    font-size: 30px;
+    color: #111827;
+}
+
+/* ---------- 7. Tablet e mobile (até 991px): header com menu recolhível ---------- */
+@media (max-width: 991px) {
+    .header-container,
+    .nav-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-menu.aberto {
+        display: block;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 14px 8px;
+        font-size: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+}
+
+/* ---------- 7b. Doação em tablet/mobile: grade e pagamento adaptáveis ---------- */
+@media (max-width: 991px) {
+    .itens-doacao {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .itens-doacao a {
+        min-width: 0;
+    }
+
+    .itens-doacao img {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+    }
+
+    .formas-pagamento {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* ---------- 8. Mobile pequeno (até 480px) ---------- */
+@media (max-width: 480px) {
+    .logo img {
+        height: 44px;
+    }
+
+    .titulo-pagina {
+        font-size: 24px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    form input,
+    form textarea {
+        max-width: 100%;
+    }
+}
+
+/* ---------- 9. Tablet (a partir de 768px) ---------- */
+@media (min-width: 768px) {
+    .titulo-pagina {
+        font-size: 34px;
+    }
+}
+
+/* ---------- 10. Telas grandes (a partir de 1300px) ---------- */
+@media (min-width: 1300px) {
+    .container,
+    .nav-container {
+        max-width: 1240px;
+    }
+}
