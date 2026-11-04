@@ -15,7 +15,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -23,20 +23,20 @@ body {
 
 .header {
     background-color: #111827;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -44,14 +44,14 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 1.5625rem;
     list-style: none;
 }
 
 .header-container ul a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .header-container ul a:hover,
@@ -62,60 +62,60 @@ body {
 /* Introdução do FAQ */
 
 main {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
 .faq-intro {
-    padding: 45px 0 30px;
+    padding: 2.8125rem 0 1.875rem;
     text-align: center;
 }
 
 .faq-label {
     color: #2563eb;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+    letter-spacing: 0.0625rem;
+    margin-bottom: 0.625rem;
 }
 
 .faq-intro h1 {
     color: #111827;
-    font-size: 32px;
-    margin-bottom: 12px;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
 }
 
 .faq-subtitle {
     color: #6b7280;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Perguntas frequentes */
 
 .faq-section h2 {
     color: #111827;
-    font-size: 24px;
-    border-left: 5px solid #2563eb;
-    padding-left: 12px;
-    margin-bottom: 22px;
+    font-size: 1.5rem;
+    border-left: 0.3125rem solid #2563eb;
+    padding-left: 0.75rem;
+    margin-bottom: 1.375rem;
 }
 
 .faq-card {
     background-color: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    padding: 22px;
-    margin-bottom: 16px;
+    border: 0.0625rem solid #e5e7eb;
+    border-radius: 0.625rem;
+    padding: 1.375rem;
+    margin-bottom: 1rem;
 }
 
 .faq-card h3 {
     color: #111827;
-    font-size: 17px;
-    margin-bottom: 8px;
+    font-size: 1.0625rem;
+    margin-bottom: 0.5rem;
 }
 
 .faq-card p {
     color: #6b7280;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Rodapé */
@@ -123,25 +123,25 @@ main {
 footer {
     background-color: #111827;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr;
-    gap: 35px;
-    padding-bottom: 35px;
+    gap: 2.1875rem;
+    padding-bottom: 2.1875rem;
 }
 
 .footer-logo,
 .footer-heading {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .footer-text {
     color: #d1d5db;
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
 }
 
 .footer-col a {
@@ -154,14 +154,14 @@ footer {
 }
 
 .footer-bottom {
-    border-top: 1px solid #374151;
-    padding: 20px 0;
+    border-top: 0.0625rem solid #374151;
+    padding: 1.25rem 0;
     text-align: center;
 }
 
 .footer-bottom p {
     color: #9ca3af;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 /* RESPONSIVIDADE - HOME */
@@ -176,11 +176,11 @@ footer {
     }
 
     .hero {
-        padding: 70px 0;
+        padding: 4.375rem 0;
     }
 
     .hero-title {
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 }
 
@@ -192,27 +192,27 @@ footer {
     }
 
     .hero {
-        padding: 45px 15px;
+        padding: 2.8125rem 0.9375rem;
     }
 
     .hero-title {
-        font-size: 29px;
+        font-size: 1.8125rem;
     }
 
     .hero-description {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .section {
-        padding: 40px 15px;
+        padding: 2.5rem 0.9375rem;
     }
 
     .section-title,
     .destaque-container h2 {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     .card {
-        padding: 20px;
+        padding: 1.25rem;
     }
 }

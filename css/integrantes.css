@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -24,20 +24,20 @@ body {
 
 .header {
     background-color: #111827;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -45,14 +45,14 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 1.5625rem;
     list-style: none;
 }
 
 .header-container ul a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .header-container ul a:hover,
@@ -64,51 +64,51 @@ body {
 
 main {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 3.125rem 0;
 }
 
 .integrantes {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 /* Cartões dos integrantes */
 
 .card-integrante {
     background-color: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 10px;
-    padding: 25px;
+    border: 0.0625rem solid #e5e7eb;
+    border-radius: 0.625rem;
+    padding: 1.5625rem;
     text-align: center;
 }
 
 .card-integrante > img {
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 .card-integrante h2 {
     color: #111827;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 1.125rem;
+    margin-bottom: 0.3125rem;
 }
 
 .card-integrante h3 {
     color: #2563eb;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 .card-integrante p {
     color: #6b7280;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Redes sociais */
@@ -117,8 +117,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin-top: 18px;
+    gap: 0.9375rem;
+    margin-top: 1.125rem;
 }
 
 .redes a {
@@ -128,8 +128,8 @@ main {
 }
 
 .redes img {
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     object-fit: contain;
     transition: transform 0.2s;
 }
@@ -143,25 +143,25 @@ main {
 footer {
     background-color: #111827;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 2fr 1.5fr 1fr 1fr;
-    gap: 35px;
-    padding-bottom: 35px;
+    gap: 2.1875rem;
+    padding-bottom: 2.1875rem;
 }
 
 .footer-logo,
 .footer-heading {
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .footer-text {
     color: #d1d5db;
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
 }
 
 .footer-col a {
@@ -174,14 +174,14 @@ footer {
 }
 
 .footer-bottom {
-    border-top: 1px solid #374151;
-    padding: 20px 0;
+    border-top: 0.0625rem solid #374151;
+    padding: 1.25rem 0;
     text-align: center;
 }
 
 .footer-bottom p {
     color: #9ca3af;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 /* RESPONSIVIDADE - INTEGRANTES */
@@ -198,8 +198,8 @@ footer {
 
 @media (max-width: 767px) {
     main {
-        padding-top: 30px;
-        padding-bottom: 35px;
+        padding-top: 1.875rem;
+        padding-bottom: 2.1875rem;
     }
 
     .integrantes,
@@ -208,11 +208,11 @@ footer {
     }
 
     .card-integrante {
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     .card-integrante > img {
-        width: 130px;
-        height: 130px;
+        width: 8.125rem;
+        height: 8.125rem;
     }
 }
