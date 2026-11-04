@@ -1,6 +1,6 @@
 /* ==========================================================
    TECHNOS - SPRINT 02 | Responsividade e componentes interativos
-   Breakpoints: mobile até 480px | tablet 768px | desktop 992px | telas grandes 1300px
+   Breakpoints: mobile até 30rem | tablet 48rem | desktop 62rem | telas grandes 81.25rem
    Carregado por TODAS as páginas, depois do CSS específico de cada uma.
    ========================================================== */
 
@@ -13,7 +13,7 @@ video {
 /* ---------- 2. Logo da navbar ---------- */
 .logo img {
     display: block;
-    height: 56px;
+    height: 3.5rem;
     width: auto;
 }
 
@@ -23,21 +23,21 @@ video {
     background: none;
     border: 0;
     cursor: pointer;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 .menu-toggle span {
     display: block;
-    width: 26px;
-    height: 3px;
-    margin: 5px 0;
+    width: 1.625rem;
+    height: 0.1875rem;
+    margin: 0.3125rem 0;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     transition: transform 0.3s, opacity 0.3s;
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(0.5rem) rotate(45deg);
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(2) {
@@ -45,31 +45,31 @@ video {
 }
 
 .menu-toggle[aria-expanded="true"] span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-0.5rem) rotate(-45deg);
 }
 
 /* ---------- 4. Validação de formulários ---------- */
 .erro-msg {
     display: block;
-    margin: 4px 0 10px;
+    margin: 0.25rem 0 0.625rem;
     color: #dc2626;
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
 form input.campo-invalido,
 form textarea.campo-invalido {
-    border: 2px solid #dc2626;
+    border: 0.125rem solid #dc2626;
 }
 
 form input.campo-valido,
 form textarea.campo-valido {
-    border: 2px solid #16a34a;
+    border: 0.125rem solid #16a34a;
 }
 
 .form-sucesso {
-    margin-top: 14px;
-    padding: 12px;
-    border-radius: 8px;
+    margin-top: 0.875rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
     background-color: #dcfce7;
     color: #166534;
     font-weight: bold;
@@ -80,14 +80,14 @@ form textarea.campo-valido {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     cursor: pointer;
     margin-bottom: 0;
 }
 
 .js-ativo .faq-card h3::after {
     content: "+";
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #2563eb;
 }
 
@@ -96,13 +96,13 @@ form textarea.campo-valido {
 }
 
 .js-ativo .faq-card h3:focus-visible {
-    outline: 2px solid #2563eb;
-    outline-offset: 4px;
+    outline: 0.125rem solid #2563eb;
+    outline-offset: 0.25rem;
 }
 
 .js-ativo .faq-card p {
     display: none;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .js-ativo .faq-card.aberto p {
@@ -115,7 +115,7 @@ form textarea.campo-valido {
 }
 
 .itens-doacao a.selecionado {
-    outline: 3px solid #2563eb;
+    outline: 0.1875rem solid #2563eb;
     background-color: #eff6ff;
 }
 
@@ -124,13 +124,13 @@ form textarea.campo-valido {
 }
 
 .formas-pagamento button.selecionado {
-    outline: 3px solid #2563eb;
+    outline: 0.1875rem solid #2563eb;
 }
 
 .resumo-doacao {
-    margin: 14px 0;
-    padding: 12px;
-    border-radius: 8px;
+    margin: 0.875rem 0;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
     background-color: #eff6ff;
     color: #1e3a8a;
     font-weight: bold;
@@ -139,8 +139,8 @@ form textarea.campo-valido {
 
 .titulo-pagina {
     text-align: center;
-    margin: 30px auto 0;
-    font-size: 30px;
+    margin: 1.875rem auto 0;
+    font-size: 1.875rem;
     color: #111827;
 }
 
@@ -175,9 +175,9 @@ form textarea.campo-valido {
 
     .nav-menu li a {
         display: block;
-        padding: 14px 8px;
-        font-size: 16px;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding: 0.875rem 0.5rem;
+        font-size: 1rem;
+        border-top: 0.0625rem solid rgba(255, 255, 255, 0.12);
     }
 }
 
@@ -195,7 +195,7 @@ form textarea.campo-valido {
 
     .itens-doacao img {
         width: 100%;
-        max-width: 120px;
+        max-width: 7.5rem;
         height: auto;
     }
 
@@ -208,15 +208,15 @@ form textarea.campo-valido {
 /* ---------- 8. Mobile pequeno (até 480px) ---------- */
 @media (max-width: 480px) {
     .logo img {
-        height: 44px;
+        height: 2.75rem;
     }
 
     .titulo-pagina {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     form {
-        padding: 18px;
+        padding: 1.125rem;
     }
 
     form input,
@@ -228,7 +228,7 @@ form textarea.campo-valido {
 /* ---------- 9. Tablet (a partir de 768px) ---------- */
 @media (min-width: 768px) {
     .titulo-pagina {
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 }
 
@@ -236,6 +236,6 @@ form textarea.campo-valido {
 @media (min-width: 1300px) {
     .container,
     .nav-container {
-        max-width: 1240px;
+        max-width: 77.5rem;
     }
 }
